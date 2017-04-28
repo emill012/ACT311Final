@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ config('app.locale') }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{{ $title }}</title>
+
+    </head>
+    <body>
+    			@if(isset($header))
+                  <h1>{{ $header }}</h1>
+            @else
+            		<h1>A list of something</h1>
+            @endif
+            <hr>
+            @forelse($games as $game => $title)
+            	 @if( $loop->first)
+            	 	 <ul>
+            	 @endif
+                <li>{{ $loop->index }} {{ $game }}'s email is {{ $title }} {{ $loop->last }}</li>
+                @if( $loop->last)
+                	 </ul>
+                @endif
+                @empty
+                <h2>No list items</h2>
+            @endforelse
+    </body>
+</html>

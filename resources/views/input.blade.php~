@@ -1,0 +1,7 @@
+@extends('masterinput')
+
+@section($title)
+
+@section($message,$message)
+
+@section($footer)
