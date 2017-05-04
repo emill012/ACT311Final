@@ -13,11 +13,13 @@
 
     </head>
     <body>
+    			<div class="jumbotron">
     			@if(isset($header))
                   <h1><center>{{ $header }}</center></h1>
             @else
             		<h1>A list of something</h1>
             @endif
+            </div>
             <hr>
             
             @forelse($games as $game => $title)

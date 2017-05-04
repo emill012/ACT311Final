@@ -1,0 +1,32 @@
+@extends('mainGames')
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">EGames</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/shooters">Shooters</a></li>
+      <li><a href="/rpg">RPG</a></li>
+      <li><a href="/sports">Sports</a></li>
+      <li><a href="/overall">Overall</a></li>
+      <li class="active"><a href="/reviews">Reviews</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="http://www.amazon.com">Shop</a></li>
+    </ul>
+  </div>
+</nav>
+
+@section($title)
+
+@section($header)
+
+@section($games)
+
+@section(begin)
+<h2>Gears of War 4 - 98%</h2>
+<h4>Great and Difficult Shooter</h4>
+<p>Gears of War 4 is a fantastic and well designed 3rd person shooter. The world that Gears takes place in is unforgiving. This is a fresh new start for the franchise but with some familiar faces thrown in. The campaign is a 5 hour action packed affair. Graphics are fresh and evolving throughout the acts. The only downfall is the glitch laiden multiplayer which I am sure will be fixed.</p>
+
+@section($footer)

@@ -15,6 +15,7 @@ Route::get('/shooters', 'Games@shooters')->name('shooters');
 Route::get('/rpg', 'Games@rpg')->name('rpg');
 Route::get('/sports', 'Games@sports');
 Route::get('/overall', 'Games@overall');
+Route::get('/reviews', 'Games@reviews');
 
 Route::get('/yourfav/{game}', 'Input@yourfav');
 Route::get('/shooters/{x}/{y}', 'Input@yourshooters');

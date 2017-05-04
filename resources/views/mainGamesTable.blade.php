@@ -25,15 +25,18 @@
             	 @if( $loop->first)
             	 	 <table class="table-striped table-bordered">
             	 @endif
+                <tr>
                 <th>{{ $game }}</th>
-                <tr><td>{{ $title }}</td></tr>
+                </tr>
+                <tr>
+                <td>{{ $title }}</td>
+                </tr>
                 @if( $loop->last)
                 	 </table>
                 @endif
                 @empty
                 <h2>No list items</h2>
             @endforelse
-            <hr>
 
 				@if(isset($footer))
             		<h3><center>{{ $footer }}</center></h3>

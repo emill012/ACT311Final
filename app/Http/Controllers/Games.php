@@ -30,6 +30,14 @@ private $sports = array(
             'FIFA' => 'FIFA 17'
     );
     
+private $reviews = array(
+            'Gears of War 4' => '98%',
+            'Forza Horizon 3' => '98%',
+            'Middle-Earth: Shadow of Mordor' => '95%',
+            'Diablo 3' => '90%',
+            'Borderlands 2' => '88%'
+    );
+    
      function home(){
             $result = "This is a website dedicated to gaming and created by Evan Miller for his ACT311 class. On this site you will find a few lists and tables representing my favorite games of the genre's listed. I have also provided some features for you to enter your own favorite game and get it shown to you on the screen. Please enjoy the site for what it is.";
 
@@ -67,13 +75,23 @@ private $sports = array(
         ]);
     }
     
+    function reviews(){
+        return view('reviews', [
+            'title' => 'EGames - My Top 5 Reviewed Games',
+            'games' => $this->reviews,
+            'header' => 'My Top 5 Reviewed Games',
+            'footer' => 'These are some great reviewed games',
+        ]);
+    }
+    
     function overall(){
             $result = "Gears of War 2";
 
             return view('overall', [
 				'title' => 'Overall Favorite Game',
 				'message' => $result,
-				'footer' => 'That is a great game'
+				'footer' => 'That is a great game',
+				'cited' => 'Picture can be found at the following URL: http://www.gadgetreview.com/wp-content/uploads/2010/05/gears-of-war-2.jpg'
         ]);
         }
 }

@@ -13,25 +13,31 @@
 
     </head>
     <body>
+    			<div class="jumbotron">
     			@if(isset($header))
                   <h1><center>{{ $header }}</center></h1>
             @else
             		<h1>A list of something</h1>
             @endif
+            </div>
             <hr>
             @forelse($games as $game => $title)
             	 @if( $loop->first)
             	 	 <table class="table-striped table-bordered">
             	 @endif
+                <tr>
                 <th>{{ $game }}</th>
-                <tr><td>{{ $title }}</td></tr>
+                <th>{{ $game }}</th>
+                </tr>
+                <tr>
+                <td>{{ $title }}</td>
+                </tr>
                 @if( $loop->last)
                 	 </table>
                 @endif
                 @empty
                 <h2>No list items</h2>
             @endforelse
-            <hr>
 
 				@if(isset($footer))
             		<h3><center>{{ $footer }}</center></h3>

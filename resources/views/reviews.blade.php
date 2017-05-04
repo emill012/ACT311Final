@@ -1,4 +1,4 @@
-@extends('mainGamesTable')
+@extends('mainGames')
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -8,10 +8,10 @@
     <ul class="nav navbar-nav">
       <li><a href="/">Home</a></li>
       <li><a href="/shooters">Shooters</a></li>
-      <li class="active"><a href="/rpg">RPG</a></li>
+      <li><a href="/rpg">RPG</a></li>
       <li><a href="/sports">Sports</a></li>
       <li><a href="/overall">Overall</a></li>
-      <li><a href="/reviews">Reviews</a></li>
+      <li class="active"><a href="/reviews">Reviews</a></li>
       <li><a href="/about">About</a></li>
       <li><a href="http://www.amazon.com">Shop</a></li>
     </ul>

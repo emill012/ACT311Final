@@ -26,7 +26,7 @@
             	 @if( $loop->first)
             	 	 <ul>
             	 @endif
-                <li>Franchise: {{ $game }} - Title: {{ $title }}</li>
+                <li>Franchise: {{ $game }} - {{ $title }}</li>
                 @if( $loop->last)
                 	 </ul>
                 @endif

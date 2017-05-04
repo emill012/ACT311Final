@@ -25,6 +25,7 @@
       <li><a href="/sports">Sports</a></li>
       <li class="active"><a href="/overall">Overall</a></li>
       <li><a href="/about">About</a></li>
+      <li><a href="http://www.amazon.com">Shop</a></li>
     </ul>
   </div>
 </nav>
@@ -34,8 +35,9 @@
            	</div> 
             <hr>
             <h1><center>{{ $message }}</center></h1>
-            <center><img src="http://vignette2.wikia.nocookie.net/gearsofwar/images/1/10/Landown_attack.jpg/revision/latest?cb=20130223025643" style="width:750px height:500px;"></center>
+            <center><img src="http://www.gadgetreview.com/wp-content/uploads/2010/05/gears-of-war-2.jpg" style="width:750px height:500px;"></center>
             <hr>
             <center>{{ $footer }}</center>
+            <center><h6>{{ $cited }}</h6></center>
     </body>
 </html>

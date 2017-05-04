@@ -10,20 +10,24 @@ private $shooters = array(
             'Gears of War' => 'Gears of War 4',
             'Call of Duty' => 'World at War',
             'Battlefield' => 'Battlefield 1',
-            'Far Cry' => 'Far Cry 4'
+            'Far Cry' => 'Far Cry 4',
+            'Bioshock' => 'Bioshock Infinite'
     );
     
 private $rpg = array(
             'Middle-Earth' => 'Shadow of Mordor',
             'Elder Scrolls' => 'Skyrim',
             'Borderlands' => 'Borderlands 2',
-            'The Witcher' => 'The Witcher 3'
+            'The Witcher' => 'The Witcher 3',
+            'Diablo' => 'Diablo 3'
     );
     
 private $sports = array(
             'Madden' => 'Madden NFL 17',
             'MLB: The Show' => 'MLB: The Show 17',
-            'WWE2K' => 'WWE 2K17'
+            'WWE2K' => 'WWE 2K17',
+            'Forza' => 'Forza Horizon 3',
+            'FIFA' => 'FIFA 17'
     );
     
      function home(){
@@ -69,7 +73,8 @@ private $sports = array(
             return view('overall', [
 				'title' => 'Overall Favorite Game',
 				'message' => $result,
-				'footer' => 'That is a great game'
+				'footer' => 'That is a great game',
+				'cited' => 'Picture can be found at the following URL: http://www.gadgetreview.com/wp-content/uploads/2010/05/gears-of-war-2.jpg'
         ]);
         }
 }

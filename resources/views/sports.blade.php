@@ -11,7 +11,9 @@
       <li><a href="/rpg">RPG</a></li>
       <li class="active"><a href="/sports">Sports</a></li>
       <li><a href="/overall">Overall</a></li>
+      <li><a href="/reviews">Reviews</a></li>
       <li><a href="/about">About</a></li>
+      <li><a href="http://www.amazon.com">Shop</a></li>
     </ul>
   </div>
 </nav>
